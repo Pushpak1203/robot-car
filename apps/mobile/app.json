@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "ESP32 AI RC Car",
+    "slug": "esp32-ai-rc-car",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#070b14"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#070b14"
+      },
+      "package": "com.esp32car.controller",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "esp32car"
+  }
+}

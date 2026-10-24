@@ -1,0 +1,29 @@
+{
+  "name": "esp32-ai-rc-car-monorepo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "ESP32 AI RC Car — Mobile Controller, Web Dashboard and Voice Control Monorepo",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test:protocol && npm run test:firmware",
+    "test:protocol": "node --test --experimental-strip-types tests/protocol.test.ts",
+    "test:firmware": "python tests/firmware_sim_test.py",
+    "dev:web": "npm run --prefix apps/web dev",
+    "build:web": "npm run --prefix apps/web build",
+    "start:mobile": "npm run --prefix apps/mobile start"
+  },
+  "keywords": [
+    "esp32",
+    "robotics",
+    "rc-car",
+    "voice-control",
+    "react-native",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT"
+}

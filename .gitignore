@@ -1,0 +1,91 @@
+# ============================================================================
+# ESP32 AI RC Car — Git Ignore Specification
+# ============================================================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs & Bundles
+dist/
+build/
+out/
+.vite/
+web-build/
+
+# Package-specific build outputs
+packages/protocol/dist/
+apps/web/dist/
+
+# PlatformIO & Embedded Firmware Artifacts
+.pio/
+.pioenvs/
+.piolibdeps/
+firmware/esp32/.pio/
+firmware/esp32/.pioenvs/
+firmware/esp32/.piolibdeps/
+*.hex
+*.bin
+*.elf
+
+# Mobile Builds & Expo Artifacts
+.expo/
+.eas/
+android/
+ios/
+*.apk
+*.aab
+*.ipa
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Logs & Diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Agent Runtime & Session State
+.gravitas/
+
+# Editor & OS Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# VS Code / IDE (Keep launch configs if needed, ignore user state)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+
+#agents
+.agents/
