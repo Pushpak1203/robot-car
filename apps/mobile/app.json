@@ -1,12 +1,13 @@
 {
   "expo": {
     "name": "ESP32 AI RC Car",
-    "slug": "esp32-ai-rc-car",
+    "slug": "esp32-ai-rc-car-monorepo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "splash": {
+      "image": "./assets/splash.png",
       "backgroundColor": "#070b14"
     },
     "ios": {
@@ -14,9 +15,10 @@
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#070b14"
       },
-      "package": "com.esp32car.controller",
+      "package": "com.pushpak1203.esp32airccarmonorepo",
       "permissions": [
         "INTERNET",
         "ACCESS_NETWORK_STATE",
@@ -26,6 +28,11 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "esp32car"
+    "scheme": "esp32car",
+    "extra": {
+      "eas": {
+        "projectId": "ca186cb2-ed1b-42e7-84ea-ca4610764220"
+      }
+    }
   }
 }
